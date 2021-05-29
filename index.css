@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background {
+  background-color: hsl(257, 40%, 49%);
+  width: 100vw;
+  height: 100vh;
+}
