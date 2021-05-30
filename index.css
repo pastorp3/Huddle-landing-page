@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .main-container {
@@ -10,10 +13,123 @@
   background: url(./images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 3% 6% 5% 6%;
 }
 
-.background {
+body {
   background-color: hsl(257, 40%, 49%);
   width: 100vw;
   height: 100vh;
 }
+
+.content {
+  display: flex;
+  padding-top: 7vh;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-top: 25px;
+}
+
+.mock {
+  width: 100%;
+  max-width: 706px;
+  height: auto
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3vw;
+}
+
+.text {
+  padding-top: 2%;
+  padding-left: 3%;
+  color: #fff;
+  text-align: left;
+}
+
+.margin-heading {
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.20rem;
+}
+
+.btn-register {
+  background-color: #fff;
+  color: hsl(257, 40%, 49%);
+  border-radius: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 20px;
+  margin-top: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.icon {
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 100%;
+  align-items: center;
+  text-align: center;
+  width: 32px;
+  height: auto;
+  padding: 7px;
+  background: transparent;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+footer {
+  background-color:hsl(257, 40%, 49%);
+  color: #fff;
+}
+
+@media (max-width: 651px) {
+  .description br {
+    display: none;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+    padding-top: 15vh;
+  }
+
+  .heading {
+    font-size: 6vw;
+  }
+
+  .icons-container {
+    justify-content: center;
+    padding-top: 5vh;
+  }
+
+  .content {
+    padding-top: 10vh;
+  }
+}
+
+
